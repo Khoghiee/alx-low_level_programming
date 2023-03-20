@@ -7,44 +7,41 @@
 
 int main(void)
 {
-int i, t;
+int i, e, g, h, op1, op2;
 
-for (i = 0; i <= 9; i++)
+i = e = g = h = 48;
+while (h < 58)
 {
-	int j;
-
-	for (j = 0; j <= 9; j++)
+	g = 48;
+	while (g < 58)
 	{
-		int l;
-
-		for (l = 0; l <= 9; l++)
+		e = 48;
+		while (e < 58)
 		{
-			int k;
-
-			for (k = 0; k <= 9; k++)
+			i = 48;
+			while (i < 58)
 			{
-				int left = i + j;
-				int right = k + l;
-
-				if (left < right)
+				op1 = (h * 10) + g;
+				op2 = (e * 10) + i;
+				if (op1 < op2)
 				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(' ');
-					putchar(l + '0');
-					putchar(k + '0');
-
-					t = right + left;
-
-					if (t < 35)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(h);
+					putchar(g);
+					putchar(32);
+					putchar(e);
+					putchar(i);
+					if (h == 57 && g == 56 && e == 57 && i == 57)
+						break;
+					putchar(44);
+					putchar(32);
 				}
+				i++;
 			}
+			e++;
 		}
+		g++;
 	}
+	h++;
 }
 putchar('\n');
 return (0);
