@@ -5,45 +5,45 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-int i, e, g, h, op1, op2
+	int i;
+	int t;
 
-i = e = g = h = 48;
-while (h < 58)
-{
-	g = 48;
-	while (g < 58)
+	for (i = 0; i <= 9; i++)
 	{
-		e = 48;
-		while (i < 58)
-		{
-			i = 48;
-			while (i < 58)
-			{
-				op1 = (h * 10) + g;
-				op2 = (e * 10) + i;
-				if (op1 < op2)
-				{
-					putchar(h);
-					putchar(g);
-					putchar(32);
-					putchar(e);
-					putchar(i);
-					if (h == 57 && g == 56 && e == 57 && i == 57)
-						break;
-					putchar(44);
-					putchar(32);
-				}
-				i++;
-			}
-			e++;
-		}
-		g++;
-	}
-	h++;
-}
-putchar('\n');
+		int j;
 
-return (0);
+		for (j = 0; j <= 9; j++)
+		{
+			int k;
+
+			for (k = 0; k <= 9; k++)
+			{
+				int left = i + j;
+				int right = k + l;
+
+				if (left < right)
+				{
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(' ');
+					putchar(l + '0');
+					putchar(k + '0');
+
+					t = right + left;
+
+					if (t < 35)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+
 }
