@@ -11,11 +11,17 @@ int i, t;
 
 for (i = 0; i <= 9; i++)
 {
-	for (int j = 0; j <= 9; j++)
+	int j;
+
+	for (j = 0; j <= 9; j++)
 	{
-		for (int l = 0; l <= 9; l++)
+		int l;
+
+		for (l = 0; l <= 9; l++)
 		{
-			for (int k = 0; k <= 9; k++)
+			int k;
+
+			for (k = 0; k <= 9; k++)
 			{
 				int left = i + j;
 				int right = k + l;
