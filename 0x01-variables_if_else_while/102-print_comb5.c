@@ -7,15 +7,15 @@
 
 int main(void)
 {
-int i, t, j, l, k;
+int i, t;
 
 for (i = 0; i <= 9; i++)
 {
-	for (j = 0; j <= 9; j++)
+	for (int j = 0; j <= 9; j++)
 	{
-		for (l = 0; l <= 9; l++)
+		for (int l = 0; l <= 9; l++)
 		{
-			for (k = 0; k <= 9; k++)
+			for (int k = 0; k <= 9; k++)
 			{
 				int left = i + j;
 				int right = k + l;
