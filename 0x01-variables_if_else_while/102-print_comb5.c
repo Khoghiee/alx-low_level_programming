@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Prints combinations of two two-digit numbers
  *
@@ -8,17 +7,14 @@
 
 int main(void)
 {
-	int i;
-	int t;
+int i, t, j, l, k;
 
-	for (i = 0; i <= 9; i++)
+for (i = 0; i <= 9; i++)
+{
+	for (j = 0; j <= 9; j++)
 	{
-		int j;
-
-		for (j = 0; j <= 9; j++)
+		for (l = 0; l <= 9; l++)
 		{
-			int k;
-
 			for (k = 0; k <= 9; k++)
 			{
 				int left = i + j;
@@ -43,7 +39,7 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');
-	return (0);
-
+}
+putchar('\n');
+return (0);
 }
